@@ -16,7 +16,7 @@ function Greeting() {
     <Fade bottom duration={1000} distance="20px">
       <section  className = 'container' style = {{zIndex: '1', position: 'absolute', marginTop: '120px', marginLeft: '20px'}}>
         {/* ROW-1 */}
-        <div className = 'row'>
+        <div className = 'row scrollspy'>
           <div className = 'col s12 l8'>
               <h1 className="white-text" style={{ zIndex: '1' }}>
             {greeting.title} <span className="wave-emoji">{emoji('👋')}</span>
@@ -35,7 +35,7 @@ function Greeting() {
         </div>
           </div>
 
-          <div className = 'col s12 l3 push-l2'>
+          <div className = 'col s12 l3 push-l4 hide-on-small-only'>
           <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
           <lottie-player
             src="https://assets10.lottiefiles.com/packages/lf20_bXRG9q.json"
@@ -48,7 +48,7 @@ function Greeting() {
           </div>
         </div>
         {/* ROW-2 */}
-        <div className = 'row'>
+        <div className = 'row scrollspy'>
         <div className = 'col s12 l2'>
         <lottie-player
           src="https://assets9.lottiefiles.com/packages/lf20_bZUZLJ.json"
@@ -60,33 +60,33 @@ function Greeting() {
         ></lottie-player>
           </div>
 
-          <div className = 'col s12 l8 offset-l2 push-l3 right-align'>
+          <div className = 'col s12 l8 offset-l2 push-l3 scrollspy' id='skills'>
           <Skills />
           </div>
         </div>
 
         {/* ROW-3 */}
-        <div className = 'row'>
+        <div className = 'row scrollspy' id='projects'>
         <div className = 'col s12 l12'>
             <Projects />
           </div>
         </div>
         {/* ROW-4 */}
-        <div className = 'row'>
+        <div className = 'row scrollspy' id='experiences'>
         <div className = 'col s12 l12'>
             <WorkExperience />
           </div>
         </div>
         {/* ROW-5 */}
-        <div className = 'row'>
+        <div className = 'row scrollspy' id = 'blogs'>
         <div className = 'col s12 l12'>
             < Blogs />
           </div>
         </div>
 
         {/* ROW-6 */}
-        <div className = 'row' style = {{margin: 'auto', width: '50%'}}>
-        <div className = 'col s12 l12'>
+        <div className = 'row scrollspy' style = {{marginLeft: '20px'}} id = 'contact' >
+        <div className = 'col s12 l12 push-l4'>
             < Contact />
           </div>
         </div>

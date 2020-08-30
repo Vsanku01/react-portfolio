@@ -10,7 +10,7 @@ function Navbar() {
   return (
     <header className = 'header'>
     <div className = 'navbar-fixed'>
-    <nav class = 'grey'>
+    <nav class = 'indigo darken-3'>
       <div class="container nav-wrapper">
 
       <a href="/" className="brand-logo">
@@ -22,23 +22,21 @@ function Navbar() {
           <i class = 'material-icons'>menu</i>
         </a>
         <ul class = 'right hide-on-med-and-down' style = {{ fontFamily: 'Helvetica'}}>
-        <li><a href="#" className = 'white-text'>Skills</a></li>
-        <li><a href="#" className = 'white-text'>Projects</a></li>
-        <li><a href="#" className = 'white-text'>Work Experiences</a> </li>
-        <li><a href="#" className = 'white-text'>Achievements</a> </li>
-        <li><a href="#" className = 'white-text'>Blogs</a> </li>
-        <li><a href="#" className = 'white-text'>Contact Me</a> </li>
+        <li><a href="#skills" className = 'white-text'>Skills</a></li>
+        <li><a href="#projects" className = 'white-text'>Projects</a></li>
+        <li><a href="#experiences" className = 'white-text'>Work Experiences</a> </li>
+        <li><a href="#blogs" className = 'white-text'>Blogs</a> </li>
+        <li><a href="#contact" className = 'white-text'>Contact Me</a> </li>
         </ul>
       </div>
     </nav>
   </div>
   <ul class = 'sidenav black' id = 'mobile-menu'>
-  <li><a href="#" className = 'white-text'>Skills</a></li>
-  <li><a href="#" className = 'white-text'>Projects</a></li>
-  <li><a href="#" className = 'white-text'>Work Experiences</a> </li>
-  <li><a href="#" className = 'white-text'>Achievements</a> </li>
-  <li><a href="#" className = 'white-text'>Blogs</a> </li>
-  <li><a href="#" className = 'white-text'>Contact Me</a> </li>
+  <li><a href="#skills" className = 'white-text'>Skills</a></li>
+  <li><a href="#projects" className = 'white-text'>Projects</a></li>
+  <li><a href="#experiences" className = 'white-text'>Work Experiences</a> </li>
+  <li><a href="#blogs" className = 'white-text'>Blogs</a> </li>
+  <li><a href="#contact" className = 'white-text'>Contact Me</a> </li>
   </ul>
   </header>
 

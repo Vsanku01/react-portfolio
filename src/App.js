@@ -22,7 +22,7 @@ class App extends Component {
     return (
       <div className="App">
         {
-          this.state.loading ? <CubeGrid  color = 'black'/>: <Main />
+          this.state.loading ? <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_VNMPxa.json"  background="transparent"  speed="1"  style={{ width: '50px', height: '50px' }}  loop autoplay></lottie-player>: <Main />
         }
       </div>
     );
@@ -36,5 +36,9 @@ export default App;
       <Greeting />
       <Skills />
       <Particle />
+
+       <CubeGrid  color = 'white'/>
+
+      <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_VNMPxa.json"  background="transparent"  speed="1"  style={{ width: '50px', height: '50px' }}  loop autoplay></lottie-player>
 
 */

@@ -11,7 +11,10 @@ const Contact = () => {
       <div className="main contact-margin-top" id="contact">
         <div className="contact-div-main">
           <div className="contact-header">
+            <div class='contact' style = {{display: 'flex', alignItems: 'center'}}> 
             <h1 className="heading contact-title">{contactInfo.title}</h1>
+        <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_NYp9cT.json"  background="transparent"  speed="1"  style={{ width: '100px', height: '100px' }}  loop  autoplay></lottie-player>
+            </div>
             <p
               className={
                     "subTitle contact-subtitle"

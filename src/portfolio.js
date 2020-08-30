@@ -274,7 +274,7 @@ const talkSection = {
 };
 
 const contactInfo = {
-  title: emoji('Contact Me 📞'),
+  title: emoji('Contact Me'),
   subtitle:
     'Got an interesting project to work on? Or just wanna hangout over a coffee. Let me know when and where',
   email_address: 'svdr2000@gmail.com',

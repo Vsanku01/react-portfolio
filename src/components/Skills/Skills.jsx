@@ -33,7 +33,8 @@ const Skills = () => {
                      "white-text"
                     }
                     style = {{
-                      fontSize: '15px'
+                      fontSize: '25px',
+                      marginRight: '30px'
                     }}
                   >
                     {skill}
