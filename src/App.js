@@ -22,7 +22,7 @@ class App extends Component {
     return (
       <div className="App">
         {
-          this.state.loading ? <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_VNMPxa.json"  background="transparent"  speed="1"  style={{ width: '50px', height: '50px' }}  loop autoplay></lottie-player>: <Main />
+          this.state.loading ? <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_07PkRX.json"  background="transparent"  speed="1"  style={{ width: '50px', height: '50px' }}  loop autoplay></lottie-player>: <Main />
         }
       </div>
     );
