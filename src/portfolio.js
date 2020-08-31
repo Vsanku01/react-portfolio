@@ -4,7 +4,7 @@ const greeting = {
   username: 'Vishnu Darshan',
   title: "Hola, I'm Vishnu",
   subTitle: emoji(
-    'Your friendly neighbourhood Software Developer 🚀 experienced in building Full-Stack Responsive Web applications with TypeScript / Reactjs / NodeJS and their deployments using Nginx and CI/CD tools.'
+    'Software Developer 🚀 experienced in building Full-Stack Responsive Web applications with TypeScript / Reactjs / NodeJS and their deployments using Nginx and CI/CD tools.'
   ),
   resumeLink: '',
 };
@@ -23,7 +23,7 @@ const skillsSection = {
   subTitle: 'PRETTY MUCH EVERYTHING FROM BUILDING A PRODUCT AND DEPLOYING IT',
   skills: [
     emoji(
-      '🚀 Build stable and secure backend infrastructure using NodeJS / Golang'
+      '🚀 Build stable and secure backend infrastructure using NodeJS'
     ),
     emoji(
       '💻 Develop highly interactive Front end / User Interfaces as Single-Page-Applications '
