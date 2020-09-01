@@ -35,14 +35,15 @@ function Greeting() {
             <SocialMedia />
             <div style={{ marginTop: '50px' }}>
               <a
-                href=""
+                href="#contact"
                 className="btn blue lighten-1"
                 style={{ marginLeft: '10px', marginRight: '20px' }}
               >
                 CONTACT ME
               </a>
               <a
-                href="https://drive.google.com/file/d/1Kq8qe3fBGmLj8CujQZ6NFdOr6GzmmXch/view?usp=sharing"
+                href="https://drive.google.com/file/d/1Hm1-fpq3D6zlrMunnTnqVihdtWyqI3w4/view?usp=sharing
+                "
                 className="btn blue lighten-1"
               >
                 SEE MY RESUME
