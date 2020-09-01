@@ -9,7 +9,7 @@ import './navbar.css'
 function Navbar() {
   return (
     <header className = 'header'>
-    <div className = 'navbar-fixed'>
+    <div className = 'navbar-fixed indigo darken-3'>
     <nav class = 'indigo darken-3'>
       <div class="container nav-wrapper">
 
@@ -18,7 +18,7 @@ function Navbar() {
           <span className="logo-name">{greeting.username}</span>
           <span className="grey-text">/&gt;</span>
         </a>
-        <a href="" class="sidenav-trigger" data-target = 'mobile-menu'>
+        <a href="#" class="sidenav-trigger" data-target = 'mobile-menu'>
           <i class = 'material-icons'>menu</i>
         </a>
         <ul class = 'right hide-on-med-and-down' style = {{ fontFamily: 'Helvetica'}}>
@@ -39,10 +39,6 @@ function Navbar() {
   <li><a href="#contact" className = 'white-text'>Contact Me</a> </li>
   </ul>
   </header>
-
-
-
-
   );
 }
 

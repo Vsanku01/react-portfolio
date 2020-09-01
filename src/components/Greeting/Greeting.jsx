@@ -41,7 +41,10 @@ function Greeting() {
               >
                 CONTACT ME
               </a>
-              <a href="" className="btn blue lighten-1">
+              <a
+                href="https://drive.google.com/file/d/1Kq8qe3fBGmLj8CujQZ6NFdOr6GzmmXch/view?usp=sharing"
+                className="btn blue lighten-1"
+              >
                 SEE MY RESUME
               </a>
             </div>
