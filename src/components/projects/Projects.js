@@ -1,4 +1,4 @@
-import "./Project.css";
+import './Project.css';
 import React, {
   useState,
   useEffect,
@@ -6,19 +6,19 @@ import React, {
   Suspense,
   lazy,
   useCallback,
-} from "react";
-import ApolloClient from "apollo-boost";
-import { gql } from "apollo-boost";
-import emoji from "react-easy-emoji";
-import { Fade } from "react-reveal";
-import Button from "../../components/button/Button";
-import { openSource, socialMediaLinks } from "../../portfolio";
-import Loading from "../../components/loading/Loading";
+} from 'react';
+import ApolloClient from 'apollo-boost';
+import { gql } from 'apollo-boost';
+import emoji from 'react-easy-emoji';
+import { Fade } from 'react-reveal';
+import Button from '../../components/button/Button';
+import { openSource, socialMediaLinks } from '../../portfolio';
+import Loading from '../../components/loading/Loading';
 import 'materialize-css/dist/css/materialize.min.css';
 
 const Projects = () => {
   const GithubRepoCard = lazy(() =>
-    import("../../components/githubRepoCard/GithubRepoCard")
+    import('../../components/githubRepoCard/GithubRepoCard')
   );
   const FailedLoading = () => null;
   const renderLoader = () => <Loading />;
@@ -27,7 +27,7 @@ const Projects = () => {
 
   const getRepoData = useCallback(() => {
     const client = new ApolloClient({
-      uri: "https://api.github.com/graphql",
+      uri: 'https://api.github.com/graphql',
       request: (operation) => {
         operation.setContext({
           headers: {
@@ -73,9 +73,9 @@ const Projects = () => {
       })
       .catch(function (error) {
         console.log(error);
-        setrepoFunction("Error");
+        setrepoFunction('Error');
         console.log(
-          "Because of this Error, nothing is shown in place of Projects section. Projects section not configured"
+          'Because of this Error, nothing is shown in place of Projects section. Projects section not configured'
         );
       });
   }, []);
@@ -88,29 +88,29 @@ const Projects = () => {
     setrepo(array);
   }
 
-  if (!(typeof repo === "string" || repo instanceof String)) {
+  if (!(typeof repo === 'string' || repo instanceof String)) {
     return (
       <Suspense fallback={renderLoader()}>
         <Fade>
-          <div className = 'row'>
-          <div className="main" id="opensource">
-            <h1 className="project-title">
-              {emoji("Open Source Projects 📖")}
-            </h1>
-            <div className="repo-cards-div-main">
-              {repo.map((v, i) => {
-                return (
-                  <GithubRepoCard key={v.node.id} isDark={isDark} repo={v} />
-                );
-              })}
+          <div className='row'>
+            <div className='main' id='opensource'>
+              <h1 className='project-title'>
+                {emoji('Open Source Projects 📖')}
+              </h1>
+              <div className='repo-cards-div-main'>
+                {repo.map((v, i) => {
+                  return (
+                    <GithubRepoCard key={v.node.id} isDark={isDark} repo={v} />
+                  );
+                })}
+              </div>
+              <Button
+                newTab
+                text='View Projects'
+                className='project-button'
+                href='https://projects-app.vercel.app/'
+              />
             </div>
-            <Button
-              newTab
-              text="More Projects"
-              className="project-button"
-              href={socialMediaLinks.github}
-            />
-          </div>
           </div>
         </Fade>
       </Suspense>
